@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: mrt_customer_kpis
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
+          - relationships:
+              arguments:
+                to: ref('dim_customers')
+                field: customer_id

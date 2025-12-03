@@ -1,0 +1,13 @@
+sources:
+  - name: jaffle_shop
+    database: RAW_DB
+    schema: JAFFLE_SHOP
+    tables:
+      - name: customers
+      - name: orders
+  
+  - name: stripe
+    database: RAW_DB
+    schema: STRIPE
+    tables:
+      - name: payment
